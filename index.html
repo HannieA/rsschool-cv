@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hanna Anishyna</h1>
+      <p class="about-me">
+        Front end developer with adept skills to build quality, usability and
+        responsive websites with a strong understading of design. Experienced in
+        HTML, CSS, Java Script, Git.
+      </p>
+      <p class="contacts">
+        <span class="phone">📞 +165066043#</span>
+        <span class="email"
+          >📧<a href="mailto:ann.986@gmail.com"> ann.986@gmail.com</a></span>
+      </p>
+    </header>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>Java Script</li>
+        <li>React</li>
+        <li>Git & Github</li>
+        <li>Bootstrap framework</li>
+        <li>Axios HTTP Client</li>
+      </ul>
+      <hr>
+      <h2>Portfolio</h2>
+      <ul class="portfolio">
+        <li class="apps">
+          <a href="https://github.com/HannieA/weather-JS" class="works weather"
+            >Weather App
+          </a>
+          <p class="btn-tools">HTML, CSS, Java Script</p>
+        </li>
+        <li>
+          <a href="https://github.com/HannieA/dictionary-react" class="works"
+            >Dictionary App
+          </a>
+          <p class="btn-tools">HTML, CSS, React</p>
+        </li>
+      </ul>
+      <h3><em>Code example</em></h3>
+      <div class="code">
+        <code>
+          function handlePexel(response) { <br>
+          setPhotos(response.data.photos); } <br>
+          function search(event) { event.preventDefault(); <br>
+          let apiUrl =
+          `https://api.dictionaryapi.dev/api/v2/entries/en/${value}`;
+          <br>
+          axios.get(apiUrl).then(showResponse); let pexelUrl =
+          `https://api.pexels.com/v1/search?query=${value}&per_page=6`; <br>
+          let pexelKey =
+          "563492ad6f91700001000001beaf3ef208ec42f6be971b2544ea2e6a"; axios
+          .get(pexelUrl, { headers: { Authorization: `Bearer ${pexelKey}` }, })
+          .then(handlePexel); }<br>
+          function handleValue(event) { <br>
+          setValue(event.target.value); }
+        </code>
+      </div>
+      <hr>
+      <h2>Courses</h2>
+      <ul>
+        <li>SheCodes School (completed). 2022</li>
+        <li>
+          <img
+            src="images/certificate.png"
+            alt="certificate"
+            class="certificate">
+        </li>
+        <li>Freebootcamp (completed). 2022</li>
+        <li>RS Schools Course «JavaScript/Front-end» (in progress). 2022</li>
+      </ul>
+      <hr>
+      <h2>Languages</h2>
+      <ul>
+        <li>English: fluent</li>
+        <li>Ukrainian: native</li>
+        <li>Russian: native</li>
+      </ul>
+    </section>
+    <footer>
+      My <a href="https://github.com/HannieA">Github</a> <br>
+      <small>10/11/2022</small> <br>
+      <a href="https://app.rs.school/" target="_blank">
+        <img src="images/logo.png" alt="logo"></a>
+    </footer>
+  </body>
+</html>
