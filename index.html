@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
   </head>
   <body>
@@ -32,7 +32,7 @@
         <li>Bootstrap framework</li>
         <li>Axios HTTP Client</li>
       </ul>
-      <hr />
+      <hr>
       <h2>Portfolio</h2>
       <ul class="portfolio">
         <li class="apps">
@@ -51,24 +51,24 @@
       <h3><em>Code example</em></h3>
       <div class="code">
         <code>
-          function handlePexel(response) { <br />
-          setPhotos(response.data.photos); } <br />
-          function search(event) { event.preventDefault(); <br />
+          function handlePexel(response) { <br>
+          setPhotos(response.data.photos); } <br>
+          function search(event) { event.preventDefault(); <br>
           let apiUrl =
           `https://api.dictionaryapi.dev/api/v2/entries/en/${value}`;
-          <br />
+          <br>
           axios.get(apiUrl).then(showResponse); let pexelUrl =
           `https://api.pexels.com/v1/search?query=${value}&amp;per_page=6`;
-          <br />
+          <br>
           let pexelKey =
           "563492ad6f91700001000001beaf3ef208ec42f6be971b2544ea2e6a"; axios
           .get(pexelUrl, { headers: { Authorization: `Bearer ${pexelKey}` }, })
-          .then(handlePexel); }<br />
-          function handleValue(event) { <br />
+          .then(handlePexel); }<br>
+          function handleValue(event) { <br>
           setValue(event.target.value); }
         </code>
       </div>
-      <hr />
+      <hr>
       <h2>Courses</h2>
       <ul>
         <li>SheCodes School (completed). 2022</li>
@@ -76,13 +76,12 @@
           <img
             src="images/certificate.png"
             alt="certificate"
-            class="certificate"
-          />
+            class="certificate">
         </li>
         <li>Freebootcamp (completed). 2022</li>
         <li>RS Schools Course «JavaScript/Front-end» (in progress). 2022</li>
       </ul>
-      <hr />
+      <hr>
       <h2>Languages</h2>
       <ul>
         <li>English: fluent</li>
@@ -91,11 +90,10 @@
       </ul>
     </section>
     <footer>
-      My <a href="https://github.com/HannieA">Github</a> <br />
-      <small>10/11/2022</small> <br />
+      My <a href="https://github.com/HannieA">Github</a> <br>
+      <small>10/11/2022</small> <br>
       <a href="https://app.rs.school/" target="_blank">
-        <img src="images/logo.png" alt="logo"
-      /></a>
+        <img src="images/logo.png" alt="logo"></a>
     </footer>
   </body>
 </html>
